@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.c4402ff9.js",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.c4402ff9.js.map": "/static/js/main.c4402ff9.js.map"
+    "main.css": "/carbons-escookpades/static/css/main.e6c13ad2.css",
+    "main.js": "/carbons-escookpades/static/js/main.c4402ff9.js",
+    "index.html": "/carbons-escookpades/index.html",
+    "main.e6c13ad2.css.map": "/carbons-escookpades/static/css/main.e6c13ad2.css.map",
+    "main.c4402ff9.js.map": "/carbons-escookpades/static/js/main.c4402ff9.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
