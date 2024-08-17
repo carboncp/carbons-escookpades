@@ -1,0 +1,13 @@
+[
+  { 
+    "name": "vegetarian", 
+    "color": "#4caf50" 
+  },
+  { 
+    "name": "instant pot", 
+    "color": "#ff5722" 
+  },
+  { "name": "low cal", "color": "#03a9f4" },
+  { "name": "marinated meat", "color": "#9c27b0" },
+  { "name": "fish", "color": "#ffffff" }
+]

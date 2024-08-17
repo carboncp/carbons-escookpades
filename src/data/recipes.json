@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "chicken broccoli rice casserole",
+    "image": "/data/images/Broccoli-Cheddar-Chicken-Rice-Casserole-Recipe-.jpg",
+    "tags": ["instant pot", "chicken", "broccoli", "rice"],
+    "time": 45,
+    "calories": 415,
+    "instructions": "Instructions for Recipe One.",
+    "references": ["https://www.jocooks.com/recipes/one-pot-cheesy-chicken-broccoli-rice-casserole/", "https://thecozycook.com/broccoli-cheddar-chicken-and-rice-casserole/", "https://www.simplyhappyfoodie.com/instant-pot-chicken-broccoli-rice-casserole/" ]
+  },
+  {
+    "id": "2",
+    "name": "R",
+    "image": "/data/images/image2.jpg",
+    "tags": ["instant pot", "fish"],
+    "time": 0,
+    "calories": 0,
+    "instructions": "Instructions for Recipe Two.",
+    "references": []
+  },
+  {
+    "id": "3",
+    "name": "E",
+    "image": "/data/images/image2.jpg",
+    "tags": ["instant pot", "fish"],
+    "time": 0,
+    "calories": 0,
+    "instructions": "Instructions for Recipe Two.",
+    "references": []
+  },
+  {
+    "id": "4",
+    "name": "B",
+    "image": "/data/images/image2.jpg",
+    "tags": ["instant pot", "vegetarian", "low cal"],
+    "time": 0,
+    "calories": 0,
+    "instructions": "Instructions for Recipe Two.",
+    "references": []
+  },
+  {
+    "id": "5",
+    "name": "D",
+    "image": "/data/images/image2.jpg",
+    "tags": ["instant pot", "fish"],
+    "time": 20,
+    "calories": 525,
+    "instructions": "Instructions for Recipe Two.",
+    "references": []
+  },
+  {
+    "id": "6",
+    "name": "A",
+    "image": "/data/images/image2.jpg",
+    "tags": ["instant pot", "vegetarian", "low cal"],
+    "time": 200,
+    "calories": 30,
+    "instructions": "Instructions for Recipe Two.",
+    "references": []
+  }
+]
