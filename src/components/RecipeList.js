@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 import { TextField, Grid, InputLabel, MenuItem, Select, FormControl, Container, Typography, Stack, Chip } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
-import recipesData from '../data/recipes.json';
-import tagColors from '../data/tagColors';
+//import recipesData from '../data/recipes.json';
+//import tagColors from '../data/tagColors';
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
@@ -12,7 +12,9 @@ const RecipeList = () => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [tags, setTags] = useState([]);
   const [sortOption, setSortOption] = useState('name'); // Default sort option
+  const [tagColors, setTagColors] = useState({});
 
+  /*
   useEffect(() => {
     const recipes = recipesData;
     setRecipes(recipes);
@@ -20,6 +22,34 @@ const RecipeList = () => {
 
     const allTags = [...new Set(recipes.flatMap(recipe => recipe.tags))];
     setTags(allTags);
+  }, []);
+  */
+
+  useEffect(() => {
+    // Fetch the JSON data from the public folder
+    fetch('/data/recipes.json')
+      .then(response => response.json())
+      .then(data => setRecipes(data));
+
+    setRecipes(recipes);
+    setFilteredRecipes(recipes);
+
+    const allTags = [...new Set(recipes.flatMap(recipe => recipe.tags))];
+    setTags(allTags);
+  }, []);
+
+  useEffect(() => {
+    // Fetch the tagColors JSON data from the public folder
+    fetch('/data/tagColors.json')
+      .then((response) => response.json())
+      .then((data) => {
+        // Convert the array of tag-color pairs into a dictionary object
+        const colorDictionary = data.reduce((acc, tag) => {
+          acc[tag.name] = tag.color;
+          return acc;
+        }, {});
+        setTagColors(colorDictionary);  // Set the tag colors dictionary in state
+      });
   }, []);
 
   useEffect(() => {
